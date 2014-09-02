@@ -1,6 +1,6 @@
 # Skyline.js
 
-Read the problem statement from [Brian Gordon's blog](https://www.instapaper.com/read/507825349),
+Read the problem statement from [Brian Gordon's blog](https://briangordon.github.io/2014/08/the-skyline-problem.html),
 and thought I'd give it a shot without reading any further.
 
 > You are given a set of n rectangles in no particular order.
