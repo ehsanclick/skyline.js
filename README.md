@@ -15,22 +15,6 @@ Example:
 
 ![skyline](The_skyline_problem.png)
 
-
 ## Progress
 
-I've started out with this data and will work from there:
-
-```javascript
-var data = [
-{x1: 0,   x2: 200, height: 400},
-{x1: 300, x2: 400, height: 200},
-{x1: 350, x2: 450, height: 300},
-{x1: 450, x2: 600, height: 500},
-{x1: 500, x2: 650, height: 200},
-{x1: 700, x2: 900, height: 400},
-];
-```
-
-My current output:
-
-![trial 1](skyline_trial1.png)
+[Read about my progress here](http://cfurrow.github.io/2014/09/02/the-skyline-problem/)
