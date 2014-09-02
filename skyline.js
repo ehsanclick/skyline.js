@@ -16,9 +16,12 @@ Skyline.prototype.process = function(){
   x = 0;
   y = canvasHeight;
 
+
   ctx.beginPath();
+  ctx.globalCompositeOperation = 'destination-atop';
   ctx.strokeStyle = '#000';
-  ctx.lineWidth   = 2;
+  ctx.fillStyle   = '#fff';
+  ctx.lineWidth   = 5;
   ctx.moveTo(x,y);
   for(; i<len; i++) {
     building = this.data[i];
@@ -34,5 +37,6 @@ Skyline.prototype.process = function(){
   }
 
   ctx.closePath();
+  ctx.fill();
   ctx.stroke();
 };
