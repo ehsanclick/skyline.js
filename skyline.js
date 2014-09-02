@@ -6,19 +6,21 @@ function Skyline(data, canvas){
   this.process();
 }
 
-Skyline.prototype.process = function(){
+Skyline.prototype.process = function(compositeOp){
   var i   = 0;
   var len = this.data.length;
   var canvasHeight = this.canvas.height;
   var x, y;
   var ctx = this.ctx;
   var building;
+  compositeOp = compositeOp || 'source-out'
   x = 0;
   y = canvasHeight;
 
-
+  ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
   ctx.beginPath();
-  ctx.globalCompositeOperation = 'destination-atop';
+  // https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html
+  ctx.globalCompositeOperation = compositeOp;
   ctx.strokeStyle = '#000';
   ctx.fillStyle   = '#fff';
   ctx.lineWidth   = 5;
