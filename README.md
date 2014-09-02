@@ -18,3 +18,8 @@ Example:
 ## Progress
 
 [Read about my progress here](http://cfurrow.github.io/2014/09/02/the-skyline-problem/)
+
+Or just check out the final result:
+
+- [Normal](http://cfurrow.github.io/skyline.js/index.html)
+- [Randomized building sizes](http://cfurrow.github.io/skyline.js/random.html)
