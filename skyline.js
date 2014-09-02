@@ -37,6 +37,7 @@ Skyline.prototype.process = function(compositeOp){
     y = canvasHeight;
     ctx.lineTo(x,y);
   }
+  ctx.lineTo(this.canvas.width, y)
 
   ctx.closePath();
   ctx.fill();
