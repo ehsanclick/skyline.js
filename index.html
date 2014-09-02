@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skyline.js</title>
+  </head>
+  <body>
+    <div style="margin: 20px;">
+      <canvas id="skyline-canvas" width="1000" height="600"></canvas>
+    </div>
+
+    <script charset="utf-8" src="skyline.js"></script>
+    <script charset="utf-8">
+      var data = [
+      {x1: 0,   x2: 200, height: 400},
+      {x1: 300, x2: 400, height: 200},
+      {x1: 350, x2: 450, height: 300},
+      {x1: 450, x2: 600, height: 500},
+      {x1: 500, x2: 650, height: 200},
+      {x1: 700, x2: 900, height: 400},
+      ];
+      var skyline = new Skyline(data, document.getElementById('skyline-canvas'));
+    </script>
+  </body>
+</html>
